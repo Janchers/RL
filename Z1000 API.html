@@ -46,7 +46,7 @@
     <h3>Response Format</h3>
     <pre>
 {
-  "api/v1/download_samples": [
+  "api/v1/files": [
     { "sample_id": "abc123", "filename": "malware.exe", "analyzed_date": "2025-03-31", "uploaded_by": "1234" },
     { "sample_id": "def456", "filename": "benign.pdf", "analyzed_date": "2025-03-31", "uploaded_by": "5678" }
   ]
@@ -84,7 +84,7 @@ print(response.json())</pre>
     <h3>Example Response</h3>
     <pre>
 {
-  "downloads": [
+  "download_samples": [
     { "sample_id": "abc123", "download_url": "https://api.z1000-security.com//api/v1/download_samples/abc123" },
     { "sample_id": "def456", "download_url": "https://api.z1000-security.com//api/v1/download_samples/def456" }
   ]
